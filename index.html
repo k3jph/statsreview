@@ -1,0 +1,973 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="next" href="excel-for-statistics/">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.6">
+    
+    
+      
+        <title>Review of Statistics</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.50c56a3b.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction-to-the-course" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Review of Statistics" class="md-header__button md-logo" aria-label="Review of Statistics" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Review of Statistics
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Review of Statistics" class="md-nav__button md-logo" aria-label="Review of Statistics" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Review of Statistics
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#welcome-to-the-course" class="md-nav__link">
+    <span class="md-ellipsis">
+      Welcome to the Course
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#course-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Course Objectives
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Course Objectives">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objective-1-understanding-basic-statistical-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objective 1: Understanding Basic Statistical Concepts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objective-2-proficiency-in-using-excel-for-statistical-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objective 2: Proficiency in Using Excel for Statistical Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objective-3-application-of-statistics-in-public-administration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objective 3: Application of Statistics in Public Administration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#course-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Course Structure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Course Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#module-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interactive-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interactive Components
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expectations-and-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expectations and Requirements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Expectations and Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#time-commitment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time Commitment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technical-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Requirements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assessment-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assessment Criteria
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Started
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#navigating-the-course" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigating the Course
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#available-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Available Resources
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#support-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Support Services
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frequently-asked-questions-faqs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frequently Asked Questions (FAQs)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="excel-for-statistics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Starting With Excel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="about-data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Working with Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="descriptive-stats/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Descriptive Statistics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="probability/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Probability Concepts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="dataviz/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Visualization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="advanced/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Preparing for Advanced Statistics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#welcome-to-the-course" class="md-nav__link">
+    <span class="md-ellipsis">
+      Welcome to the Course
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#course-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Course Objectives
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Course Objectives">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objective-1-understanding-basic-statistical-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objective 1: Understanding Basic Statistical Concepts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objective-2-proficiency-in-using-excel-for-statistical-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objective 2: Proficiency in Using Excel for Statistical Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objective-3-application-of-statistics-in-public-administration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objective 3: Application of Statistics in Public Administration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#course-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Course Structure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Course Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#module-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interactive-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interactive Components
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expectations-and-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expectations and Requirements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Expectations and Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#time-commitment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time Commitment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technical-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Requirements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assessment-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assessment Criteria
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Started
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#navigating-the-course" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigating the Course
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#available-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Available Resources
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#support-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Support Services
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frequently-asked-questions-faqs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frequently Asked Questions (FAQs)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="introduction-to-the-course">Introduction to the Course<a class="headerlink" href="#introduction-to-the-course" title="Permanent link">&para;</a></h1>
+<h2 id="welcome-to-the-course">Welcome to the Course<a class="headerlink" href="#welcome-to-the-course" title="Permanent link">&para;</a></h2>
+<p>Welcome, students, to "Introduction to Statistics for Public
+Administration"! We are thrilled to have you join us for this journey
+into the world of statistics, tailored specifically for applications
+in public administration. This course is designed to equip you with
+the foundational statistical knowledge and skills necessary to
+analyze, interpret, and make informed decisions based on data.
+Whether you are new to statistics or looking to refresh your
+knowledge, this course will provide you with practical insights and
+tools that are directly applicable to the public sector.</p>
+<p>Throughout this course, you will learn how to effectively utilize
+Excel for statistical analysis, enabling you to handle real-world
+data with confidence. We will start with the basics of descriptive
+statistics, covering measures of central tendency and dispersion,
+before moving on to more complex topics such as probability,
+hypothesis testing, and regression analysis. Each module is crafted
+to build your understanding step-by-step, with plenty of examples
+and exercises drawn from public administration contexts.</p>
+<p>The skills you acquire in this course will not only be valuable in
+your academic pursuits but also in your professional life, enhancing
+your ability to contribute to data-driven decision-making in public
+organizations. Our goal is to make statistics approachable and
+relevant, demystifying complex concepts and demonstrating their
+practical utility in addressing public administration challenges.</p>
+<p>We are excited to guide you through this learning experience, helping
+you to develop a solid statistical foundation that will support
+your studies and career in public administration. So, let's get
+started on this exciting journey together!</p>
+<p><img alt="Welcome Image" src="images/welcome_course.png" /><br />
+<em>Figure 1: Welcome to Introduction to Statistics for Public Administration</em></p>
+<h2 id="course-objectives">Course Objectives<a class="headerlink" href="#course-objectives" title="Permanent link">&para;</a></h2>
+<p>This course, "Introduction to Statistics for Public Administration," has been carefully designed with the following key objectives in mind. Our aim is to ensure that by the end of this journey, you'll have gained not only theoretical knowledge but also practical skills that will significantly benefit your academic and professional endeavors in the realm of public administration. Here's what we aim to achieve together:</p>
+<h3 id="objective-1-understanding-basic-statistical-concepts">Objective 1: Understanding Basic Statistical Concepts<a class="headerlink" href="#objective-1-understanding-basic-statistical-concepts" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>What You'll Learn</strong>: You'll start by building a solid foundation in the fundamental concepts of statistics. This includes understanding different types of data, measures of central tendency and dispersion, probability theories, and the basics of hypothesis testing and regression analysis.</li>
+<li><strong>Why It Matters</strong>: Grasping these concepts is crucial for any public administration professional. It enables you to interpret data accurately, assess research findings critically, and understand the statistical underpinnings of public policy analyses.</li>
+</ul>
+<h3 id="objective-2-proficiency-in-using-excel-for-statistical-analysis">Objective 2: Proficiency in Using Excel for Statistical Analysis<a class="headerlink" href="#objective-2-proficiency-in-using-excel-for-statistical-analysis" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>What You'll Learn</strong>: Excel is a powerful tool for statistical analysis, and you'll learn how to leverage its functions to collect, analyze, and interpret data. This includes creating and customizing charts, performing descriptive and inferential statistical calculations, and using Excel's data analysis tools.</li>
+<li><strong>Why It Matters</strong>: Proficiency in Excel enhances your efficiency and effectiveness in handling real-world data. It equips you with the skills to perform quick analyses, make data-driven decisions, and present findings in a clear, accessible manner.</li>
+</ul>
+<h3 id="objective-3-application-of-statistics-in-public-administration">Objective 3: Application of Statistics in Public Administration<a class="headerlink" href="#objective-3-application-of-statistics-in-public-administration" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>What You'll Learn</strong>: We'll explore how statistical analysis applies directly to public administration. This includes case studies and examples where statistical methods support policy development, program evaluation, and decision-making processes.</li>
+<li><strong>Why It Matters</strong>: Applying statistics in the context of public administration helps you to address complex societal issues with evidence-based solutions. It strengthens your ability to contribute to the development, evaluation, and improvement of public policies and services.</li>
+</ul>
+<p><strong>How This Benefits You</strong>: By achieving these objectives, you'll emerge from this course with a comprehensive skill set that enhances your analytical capabilities, bolsters your professional qualifications, and prepares you for advanced studies and challenges in the field of public administration. We're here to support your journey towards becoming a competent, data-savvy public administration professional.</p>
+<h2 id="course-structure">Course Structure<a class="headerlink" href="#course-structure" title="Permanent link">&para;</a></h2>
+<p>This course is designed as a self-paced, online learning experience, allowing you to navigate through the content according to your schedule and learning preferences. Below is an overview of the course structure, detailing what you can expect to learn in each module and highlighting the interactive components that will engage you throughout your journey.</p>
+<h3 id="module-overview">Module Overview<a class="headerlink" href="#module-overview" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Module 0: Introduction to the Course</strong></li>
+<li>
+<p>A warm welcome and orientation to the course, its objectives, and how to navigate through the material.</p>
+</li>
+<li>
+<p><strong>Module 1: Introduction to Excel for Statistics</strong></p>
+</li>
+<li>
+<p>Learn the basics of Excel, including navigating the interface and performing simple data entry and formatting.</p>
+</li>
+<li>
+<p><strong>Module 2: Fundamentals of Data Types and Basic Algebra in Excel</strong></p>
+</li>
+<li>
+<p>Dive into understanding different data types and performing basic algebraic operations within Excel.</p>
+</li>
+<li>
+<p><strong>Module 3: Descriptive Statistics Using Excel</strong></p>
+</li>
+<li>
+<p>Explore measures of central tendency and dispersion to describe data sets effectively.</p>
+</li>
+<li>
+<p><strong>Module 4: Basic Probability Concepts in Excel</strong></p>
+</li>
+<li>
+<p>Understand and apply basic probability rules and perform simple probability calculations in Excel.</p>
+</li>
+<li>
+<p><strong>Module 5: Introduction to Data Visualization in Excel</strong></p>
+</li>
+<li>
+<p>Learn how to create and interpret basic charts and graphs, enhancing your data presentation skills.</p>
+</li>
+<li>
+<p><strong>Module 6: Preparing for Advanced Statistical Analysis</strong></p>
+</li>
+<li>An introductory overview of more complex statistical concepts such as hypothesis testing and regression analysis, preparing you for further study.</li>
+</ul>
+<h3 id="interactive-components">Interactive Components<a class="headerlink" href="#interactive-components" title="Permanent link">&para;</a></h3>
+<p>To reinforce your learning and ensure you're applying the concepts effectively, the course includes a variety of interactive components:</p>
+<ul>
+<li>
+<p><strong>Quizzes</strong>: At the end of each module, you'll find quizzes designed to test your understanding of the material.</p>
+</li>
+<li>
+<p><strong>Exercises</strong>: Practical Excel exercises accompany each module, allowing you to apply what you've learned directly.</p>
+</li>
+<li>
+<p><strong>Discussion Forums</strong>: Engage with fellow students and instructors in discussion forums, where you can ask questions, share insights, and discuss real-world applications of course concepts.</p>
+</li>
+<li>
+<p><strong>Final Project</strong>: A capstone project that allows you to apply the full range of skills you've acquired throughout the course to a real-world data analysis scenario relevant to public administration.</p>
+</li>
+</ul>
+<p>This structured approach ensures that you not only gain theoretical knowledge but also practical experience in using statistics within the public administration context. We're excited to support you as you progress through each module, developing both your understanding and your skills in statistical analysis.</p>
+<p><img alt="Course Structure" src="images/course_structure.png" /><br />
+<em>Figure 2: Overview of Course Structure</em></p>
+<h2 id="expectations-and-requirements">Expectations and Requirements<a class="headerlink" href="#expectations-and-requirements" title="Permanent link">&para;</a></h2>
+<p>To ensure a productive and successful learning experience in this course, it's important to understand the expectations and requirements for participation and completion. This section outlines what is expected of you as a student, including the time commitment, technical requirements, and assessment criteria.</p>
+<h3 id="time-commitment">Time Commitment<a class="headerlink" href="#time-commitment" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Estimated Time</strong>: On average, students should expect to dedicate approximately 3-5 hours per week to course materials, exercises, and assessments. This estimate may vary depending on your familiarity with the content and the pace at which you choose to work.</li>
+<li><strong>Self-Paced Structure</strong>: Given the online and self-paced nature of this course, you have the flexibility to manage your time according to your schedule. However, consistent weekly engagement is recommended to ensure steady progress.</li>
+</ul>
+<h3 id="technical-requirements">Technical Requirements<a class="headerlink" href="#technical-requirements" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Software</strong>: The primary software used in this course is Microsoft Excel. It is essential that you have access to this software, as it will be used extensively for data analysis exercises and assignments.</li>
+<li><strong>Hardware</strong>: A computer with internet access is required. Ensure your system is capable of running the latest version of Excel smoothly.</li>
+<li><strong>Other Tools</strong>: Occasionally, additional resources such as PDF readers or web browsers may be needed to access supplementary materials.</li>
+</ul>
+<h3 id="assessment-criteria">Assessment Criteria<a class="headerlink" href="#assessment-criteria" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Quizzes and Exercises</strong>: Your understanding of the course material will be assessed through quizzes and practical Excel exercises. These are designed to test your knowledge and application of statistical concepts and Excel functionalities.</li>
+<li><strong>Participation</strong>: Engagement in discussion forums and peer interactions are encouraged. While participation may not be formally graded, active involvement enriches the learning experience for all participants.</li>
+<li><strong>Final Project</strong>: A significant component of your assessment will be a final project that involves applying statistical analysis techniques to a real-world public administration scenario. This project will demonstrate your ability to integrate and apply course concepts.</li>
+</ul>
+<p><strong>Expectations for Success</strong>: To successfully complete this course, you should aim to actively engage with all course materials, complete assignments and exercises to the best of your ability, and participate in discussions and feedback opportunities. Your dedication and involvement are key to your success in mastering the fundamentals of statistics for public administration.</p>
+<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
+<p>Welcome to the first step of your learning journey in "Introduction to Statistics for Public Administration"! This guide will help you navigate the course materials, access resources, and find support whenever you need it. Follow these steps to begin:</p>
+<h3 id="navigating-the-course">Navigating the Course<a class="headerlink" href="#navigating-the-course" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Accessing Materials</strong>: All course materials are available on our learning platform. Upon logging in, you will find the course dashboard, which lists all the modules and their respective contents, including lectures, readings, and exercises.</li>
+<li><strong>Module Progression</strong>: The course is designed to be completed in sequence. While you have the flexibility to browse through the modules, it's recommended to follow the order presented to build your understanding progressively.</li>
+<li><strong>Tracking Your Progress</strong>: The platform tracks your progress automatically. You can see which modules you've completed and which ones are pending at any time.</li>
+</ul>
+<p><img alt="Getting Started" src="images/getting_started.png" /><br />
+<em>Figure 3: Guide to Getting Started with the Course</em></p>
+<h3 id="available-resources">Available Resources<a class="headerlink" href="#available-resources" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Readings and Supplementary Materials</strong>: Each module includes required readings and optional supplementary materials. These are carefully selected to enhance your learning and provide deeper insights into specific topics.</li>
+<li><strong>Downloadable Resources</strong>: Where applicable, downloadable Excel files, PDFs, and other resources are provided to practice the skills you've learned. Make sure to take advantage of these materials to reinforce your understanding.</li>
+</ul>
+<h3 id="support-services">Support Services<a class="headerlink" href="#support-services" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Technical Support</strong>: If you encounter any technical issues accessing the course materials or navigating the platform, please contact our technical support team at support@example.com. We aim to resolve issues promptly to ensure a smooth learning experience.</li>
+<li><strong>Academic Support</strong>: For questions related to course content, exercises, or assignments, you can reach out to the course instructor via the platform's messaging system. Additionally, the discussion forums are a great place to seek help from peers and share insights.</li>
+</ul>
+<p>Getting started with this course is the first step towards mastering statistics for public administration. By familiarizing yourself with the course structure, resources, and support services, you're setting yourself up for success. We're excited to have you on board and look forward to supporting you throughout this learning journey!</p>
+<h2 id="frequently-asked-questions-faqs">Frequently Asked Questions (FAQs)<a class="headerlink" href="#frequently-asked-questions-faqs" title="Permanent link">&para;</a></h2>
+<p>A section addressing common questions or concerns that students may have about the course. This can include queries about course content, structure, technical issues, or assessment methods.</p>
+<ul>
+<li><strong>Question 1</strong>: Sample FAQ question.</li>
+<li><strong>Question 2</strong>: Another common question.</li>
+</ul>
+<p><img alt="FAQs" src="images/faqs.png" /><br />
+<em>Figure 5: Frequently Asked Questions</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.e1c3ead8.min.js"></script>
+      
+    
+  </body>
+</html>

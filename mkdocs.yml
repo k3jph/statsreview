@@ -1,0 +1,34 @@
+site_name: Review of Statistics
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Starting With Excel: excel-for-statistics.md
+  - Working with Data: about-data.md
+  - Descriptive Statistics: descriptive-stats.md
+  - Probability Concepts: probability.md
+  - Data Visualization: dataviz.md
+  - Preparing for Advanced Statistics: advanced.md
+
+
+markdown_extensions:
+  - admonition
+  - def_list
+  - footnotes
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.keys
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+  - tables

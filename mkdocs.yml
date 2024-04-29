@@ -1,4 +1,4 @@
-site_name: Review of Statistics
+site_name: Introduction to Statistics
 
 theme:
   name: material
@@ -8,9 +8,8 @@ nav:
   - Starting With Excel: excel-for-statistics.md
   - Working with Data: about-data.md
   - Descriptive Statistics: descriptive-stats.md
-  - Probability Concepts: probability.md
   - Data Visualization: dataviz.md
-  - Preparing for Advanced Statistics: advanced.md
+  - Probability Concepts: probability.md
 
 
 markdown_extensions:

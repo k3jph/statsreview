@@ -2,6 +2,12 @@
 
 In the realm of data analysis, the power of visualization cannot be overstated. Charts and graphs in Excel are not merely tools for making data more appealing but are essential for uncovering and communicating the deeper stories hidden within the data. This guide is designed to empower students and professionals alike with the knowledge and skills to leverage Excel for creating impactful data visualizations, transforming raw data into insightful narratives.
 
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true">
+    <source src="../videos/RSPA07.mp4" type="video/mp4">
+  </video>
+</figure>
+
 ### The Importance of Data Visualization
 
 - **Enhanced Comprehension**: Visual representations of data allow our brains to comprehend complex information more efficiently than through tables or raw data alone. Charts and graphs can highlight trends, patterns, and outliers in a way that is immediately accessible, making them invaluable for analysis and decision-making.
